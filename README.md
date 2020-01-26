@@ -3,6 +3,10 @@ Some people asked if I could do a search automplete component for my upcoming tu
 
 The link to the tutorial will be here once I finished writing and recording all of them, meanwhile you can clone this repo and read the code since it is full of comments explaining everything I do (and why)!
 
+## Demo?
+Yes! Here is a link so you can test this by yourself without installing it!
+[Demo Here](https://naucode.github.io/Search-Autocomplete/)
+
 ## How to install it?
 First, clone the repo:
 ``` bash
