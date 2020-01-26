@@ -9,7 +9,7 @@
 /coverage
 
 # production
-# /build # I enable git to upload it to the repo to offer a demo on the GitHub repo, you should uncomment it!
+/build
 
 # misc
 .DS_Store

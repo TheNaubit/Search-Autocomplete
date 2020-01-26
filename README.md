@@ -23,3 +23,6 @@ And after that, test it by running:
 ``` bash
 npm start
 ```
+
+## Docs folder?
+Yeah, I had to add a docs folder to be able to run the demo from there on the GitHub pages!
