@@ -16,7 +16,6 @@ export default class AutoCompletedText extends React.Component {
         };
 
         this.onTextChange = this.onTextChange.bind(this);
-        this.onBlur = this.onBlur.bind(this);
         this.onFocus = this.onFocus.bind(this);
         this.selectedText = this.selectedText.bind(this);
     }
@@ -48,19 +47,6 @@ export default class AutoCompletedText extends React.Component {
             suggestions,
             text: value
         }));
-    }
-
-    // This function runs when we lost focus on the input component
-    // To hide the suggestions list
-    onBlur = (e) => {
-        // This condition checks if we really lost focus or if we
-        // just focused in a child of this component
-        if (!e.currentTarget.contains(e.relatedTarget)) {
-            // Just if we really lost the focus, we hide the suggestions list
-            this.setState(() => ({
-                suggestions: []
-            }));
-        }
     }
 
     // This functions runs when we get the focus on the input component
@@ -123,7 +109,7 @@ export default class AutoCompletedText extends React.Component {
                     <h2>Which country would you like to visit?</h2>
                     {/* Remember: we register the onTextChange function to work with the component's onChange event! */}
                     <div className="input-wrapper">
-                        <input id="query" type="text" onFocus={this.onFocus} onBlur={this.onBlur} onChange={this.onTextChange} value={text} placeholder="Start writing a country..." autoComplete="off" />
+                        <input id="query" type="text" onFocus={this.onFocus} onChange={this.onTextChange} value={text} placeholder="Start writing a country..." autoComplete="off" />
                         <span className="focus-border">
                             <i></i>
                         </span>
